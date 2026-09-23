@@ -1,0 +1,35 @@
+.prism-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #080808;
+}
+
+.prism-container canvas {
+  mix-blend-mode: screen;
+  opacity: .9;
+}
+
+.prism-container[data-webgl='unsupported'] {
+  background:
+    radial-gradient(circle at 68% 40%, rgba(255, 59, 36, .42), transparent 30%),
+    #080808;
+}
+
+/* The WebGL surface replaces the former CSS ribbon/orb background. */
+.hero-media {
+  background: #080808;
+}
+
+.hero-media:after {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, .52), transparent 62%),
+    linear-gradient(0deg, rgba(0, 0, 0, .62), transparent 46%);
+}
+
+.hero-image-wash {
+  background: linear-gradient(0deg, rgba(0, 0, 0, .58), transparent 46%);
+}

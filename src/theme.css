@@ -1,0 +1,110 @@
+:root {
+  --accent: #ff3b24;
+  --acid: var(--accent);
+  --accent-ink: #111;
+  --accent-light: #f6f6f2;
+}
+
+.hero-orbit {
+  border-color: rgba(255, 59, 36, .32);
+}
+
+.orbit-one {
+  box-shadow: 0 0 80px rgba(255, 59, 36, .1);
+}
+
+.portrait-wrap:after {
+  border-color: rgba(255, 59, 36, .5);
+}
+
+.contact-glow {
+  border-color: rgba(255, 59, 36, .17);
+  box-shadow: 0 0 110px rgba(255, 59, 36, .08), inset 0 0 100px rgba(255, 59, 36, .04);
+}
+
+.email-link {
+  border-bottom-color: rgba(255, 59, 36, .35);
+}
+
+.hero {
+  --hero-accent: var(--accent);
+}
+
+button,
+.email-link,
+.contact-lines a {
+  transition:
+    color 220ms ease,
+    background-color 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.hero .contact-btn {
+  border: 1px solid transparent;
+}
+
+.hero .contact-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.hero .hero-cta {
+  background: var(--accent-light);
+  color: var(--accent-ink);
+}
+
+.hero .hero-cta:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(255, 59, 36, .24);
+}
+
+.hero .scroll-cue:hover {
+  color: var(--accent);
+}
+
+.menu-btn:hover {
+  color: var(--accent) !important;
+}
+
+.work-image button {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.work-image button:hover {
+  background: #fff;
+  color: var(--accent);
+  transform: rotate(45deg);
+}
+
+.outline-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(255, 59, 36, .18);
+}
+
+.contact-lines a:hover,
+.email-link:hover,
+.contact-bottom button:hover {
+  color: var(--accent);
+}
+
+.contact-lines a:hover svg,
+.contact-lines a:hover svg:last-child {
+  color: var(--accent);
+}
+
+.strength:hover {
+  border-color: var(--accent);
+}
