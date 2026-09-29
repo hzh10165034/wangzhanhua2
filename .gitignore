@@ -2,3 +2,8 @@ node_modules/
 dist/
 .DS_Store
 *.log
+
+# Local nested repository copies are not part of the deployed website.
+/huazuopin/
+/wangzhanhua/
+/wangzhanhuageren/
