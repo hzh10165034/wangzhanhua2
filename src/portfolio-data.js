@@ -4,6 +4,8 @@ export const portfolioImage = (file, size = 'cover') => `${workMedia}${file}-${s
 export const preview = (file, size = 'cover') => `${workMedia}${file.split('.')[0]}-${size}.webp`;
 
 export const works = [
+  { title: '五粮液 · 花蝶酒瓶设计', category: '品牌包装', type: 'BOTTLE / PACKAGING', tone: 'cream', description: '以蓝色花卉与蝴蝶纹样装饰瓶身，结合通透材质与水花场景。展示单瓶主视觉、正背面细节、双瓶组合及多瓶陈列。', images: ['wuliangye-01', 'wuliangye-02', 'wuliangye-03', 'wuliangye-04', 'wuliangye-05'] },
+  { title: '内蒙古乳品 · 系列包装', category: '品牌包装', type: 'DAIRY / PACKAGING', tone: 'cream', description: '以白底、蓝色动物插画与金色细节建立系列视觉。包含鲜羊奶、鲜牛奶、奶酪与奶豆腐包装，展示单品及整套组合。', images: ['dairy-01', 'dairy-02', 'dairy-03', 'dairy-04'] },
   { title: '蒙都 · 风干牛肉', category: '品牌包装', type: 'PACKAGING / BRANDING', tone: 'red', description: '草原、牛群与风景线描构成包装主视觉。展示单盒、三种口味组合、局部细节与陈列效果。', images: [23, 19, 28, 20].map(asset) },
   { title: '灵湖咖啡 App', category: '数字产品', type: 'UI / DIGITAL PRODUCT', tone: 'cream', description: '以温暖的咖啡色与清晰的信息层级组织移动界面。包含界面总览、首页、点单、结算与会员中心。', images: [30, 2, 3, 5, 6].map(asset) },
   { title: '豪士 · 藜麦吐司海报', category: '视觉海报', type: 'CAMPAIGN / POSTER', tone: 'cream', description: '两组吐司主题视觉：以童年想象表现松软与轻盈，以画框和谷物、麦穗、云朵构建“可食用的艺术”。', images: [1, 21, 22, 16, 17, 18].map(asset) },
